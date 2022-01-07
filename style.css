@@ -688,13 +688,14 @@ main .disFlex p:nth-child(2) {
   gap: 2rem;
 }
 /*********************************************/
+
 .arrow-5 {
   transform: rotate(-90deg);
   margin-left: -2rem;
 }
 .arrow-6 {
   margin-top: -28rem;
-  margin-left: -4rem;
+  margin-left: -6.5rem;
 }
 .hex-container {
   width: 22rem;
@@ -718,29 +719,39 @@ main .disFlex p:nth-child(2) {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-25%, -32%);
+  transform: translate(-25%, -15%);
 }
 .hex2 {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-62%, -10%);
+  transform: translate(-67%, 35%);
 }
 .hex3 {
   position: absolute;
-  top: 0;
+  top: 20%;
   left: 50%;
-  transform: translate(-23%, 15%);
+  transform: translate(-23%, 24%);
 }
 .hex4 {
   position: absolute;
-  top: 0;
+  top: 30%;
   left: 50%;
-  transform: translate(-62%, 37%);
+  transform: translate(-67%, 45%);
 }
 .hex {
-  font-size: 18rem;
-  color: #fff;
+  width: 13rem;
+  height: 13rem;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    50% 0%,
+    95% 25%,
+    95% 75%,
+    50% 100%,
+    5% 75%,
+    5% 25%
+  );
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   position: relative;
 }
 .hex1::after,
@@ -768,12 +779,20 @@ main .disFlex p:nth-child(2) {
   content: "COURSE 4";
 }
 .hex::before {
-  content: "\2B22";
+  content: "";
   background: linear-gradient(to bottom, #b671cf, #3a30aa);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 17rem;
+  width: 12rem;
+  height: 12rem;
+  -webkit-clip-path: polygon(
+    50% 0%,
+    95% 25%,
+    95% 75%,
+    50% 100%,
+    5% 75%,
+    5% 25%
+  );
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+
   position: absolute;
   top: 50%;
   left: 50%;
