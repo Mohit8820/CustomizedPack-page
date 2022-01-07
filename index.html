@@ -14,358 +14,525 @@
     <title>Customized Pack</title>
   </head>
   <body>
+    <header class="disFlex">
+      <img class="logo" src="Tutedude.png" alt="logo" />
+      <nav class="disFlex gradText">
+        <a href="">explore programs</a>
+        <a href="">offers</a>
+        <a href="">refund advantage</a>
+        <a href="">about us</a>
+      </nav>
+      <div class="buttons disFlex">
+        <div class="login-container">
+          <button class="login" id="logBtn">
+            <div class="gradText">login</div>
+          </button>
+        </div>
+        <div id="log" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close" id="log-close">&times;</span>
+            <form action="">
+              <div class="container">
+                <img class="logo" src="Tutedude.png" alt="logo" />
+                <a class="disFlex">
+                  <img
+                    class="google"
+                    src="5847f9cbcef1014c0b5e48c8.png"
+                    alt=""
+                  />
+                  Google Sign In
+                </a>
+                <h3>OR</h3>
 
-      <header class="disFlex">
-        <img class="logo" src="Tutedude.png" alt="logo" />
-        <nav class="disFlex gradText">
-          <a href="">explore programs</a>
-          <a href="">offers</a>
-          <a href="">refund advantage</a>
-          <a href="">about us</a>
-        </nav>
-        <div class="buttons disFlex">
-          <div class="login-container">
-            <button class="login" id="logBtn">
-              <div class="gradText">login</div>
-            </button>
-          </div>
-          <div id="log" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close" id="log-close">&times;</span>
-              <form action="">
-                <div class="container">
-                  <img class="logo" src="Tutedude.png" alt="logo" />
-                  <a class="disFlex">
-                    <img
-                      class="google"
-                      src="5847f9cbcef1014c0b5e48c8.png"
-                      alt=""
-                    />
-                    Google Sign In
-                  </a>
-                  <h3>OR</h3>
-
-                  <div class="border">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      class="modal-icon"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <style type="text/css">
-                        .modal-icon {
-                          stroke: url(#logMyGra) !important;
-                        }
-                      </style>
-                      <defs>
-                        <linearGradient id="logMyGra">
-                          <stop offset="5%" stop-color="#b671cf" />
-                          <stop offset="95%" stop-color="#3a30aa" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"
-                      />
-                    </svg>
-                    <input
-                      type="text"
-                      placeholder="Enter Email"
-                      name="email"
-                      required
-                    />
-                  </div>
-
-                  <div class="border">
-                    <svg
-                      class="modal-icon"
-                      width="24"
-                      height="24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                    >
-                      <style type="text/css">
-                        .modal-icon {
-                          stroke: url(#logMyGrad);
-                        }
-                      </style>
-                      <defs>
-                        <linearGradient id="logMyGrad">
-                          <stop offset="5%" stop-color="#b671cf" />
-                          <stop offset="95%" stop-color="#3a30aa" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M12.804 9c1.038-1.793 2.977-3 5.196-3 3.311 0 6 2.689 6 6s-2.689 6-6 6c-2.219 0-4.158-1.207-5.196-3h-3.804l-1.506-1.503-1.494 1.503-1.48-1.503-1.52 1.503-3-3.032 2.53-2.968h10.274zm7.696 1.5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5z"
-                      />
-                    </svg>
-                    <input
-                      type="password"
-                      placeholder="Password (min. 6 characters)"
-                      name="psw"
-                      required
-                    />
-                  </div>
-                  <div class="checkandforgot">
-                    <div class="check disFlex">
-                      <label class="checkbox">
-                        <input type="checkbox" /><span class="checkmark"></span>
-                      </label>
-                      <span>Keep me Logged In</span>
-                    </div>
-                    <a href="">forgot Password?</a>
-                  </div>
-
-                  <button type="submit" class="signupbtn btn-fill">
-                    Sign Up
-                  </button>
-                  <span class="orLogin"
-                    >New User?
-                    <strong onclick="orsign()">Register here</strong></span
+                <div class="border">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    class="modal-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
                   >
+                    <style type="text/css">
+                      .modal-icon {
+                        stroke: url(#logMyGra) !important;
+                      }
+                    </style>
+                    <defs>
+                      <linearGradient id="logMyGra">
+                        <stop offset="5%" stop-color="#b671cf" />
+                        <stop offset="95%" stop-color="#3a30aa" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"
+                    />
+                  </svg>
+                  <input
+                    type="text"
+                    placeholder="Enter Email"
+                    name="email"
+                    required
+                  />
                 </div>
-              </form>
-            </div>
-          </div>
 
-          <button class="btn-fill sign-up" id="signBtn">sign up</button>
-
-          <!-- /****************signup modal**************************/ -->
-          <div id="sign" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close" id="sign-close">&times;</span>
-              <form action="">
-                <div class="container">
-                  <img class="logo" src="Tutedude.png" alt="logo" />
-                  <a class="disFlex">
-                    <img
-                      class="google"
-                      src="5847f9cbcef1014c0b5e48c8.png"
-                      alt=""
-                    />
-                    Sign Up with Google
-                  </a>
-                  <h3>OR</h3>
-                  <div class="border">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="modal-ico"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <style type="text/css">
-                        .modal-ico {
-                          stroke: url(#sigMyGra);
-                        }
-                      </style>
-                      <defs>
-                        <linearGradient id="sigMyGra">
-                          <stop offset="5%" stop-color="#b671cf" />
-                          <stop offset="95%" stop-color="#3a30aa" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"
-                      />
-                    </svg>
-                    <input
-                      type="text"
-                      placeholder="Full Name"
-                      name="name"
-                      required
-                    />
-                  </div>
-                  <div class="border">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      class="modal-ico"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <style type="text/css">
-                        .modal-ico {
-                          stroke: url(#sigMyGrad);
-                        }
-                      </style>
-                      <defs>
-                        <linearGradient id="sigMyGrad">
-                          <stop offset="5%" stop-color="#b671cf" />
-                          <stop offset="95%" stop-color="#3a30aa" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"
-                      />
-                    </svg>
-                    <input
-                      type="text"
-                      placeholder="Enter Email"
-                      name="email"
-                      required
-                    />
-                  </div>
-
-                  <div class="border">
-                    <svg
-                      class="modal-ico"
-                      width="24"
-                      height="24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                    >
-                      <style type="text/css">
-                        .modal-ico {
-                          stroke: url(#sigMyGrad);
-                        }
-                      </style>
-                      <defs>
-                        <linearGradient id="sigMyGrad">
-                          <stop offset="5%" stop-color="#b671cf" />
-                          <stop offset="95%" stop-color="#3a30aa" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M12.804 9c1.038-1.793 2.977-3 5.196-3 3.311 0 6 2.689 6 6s-2.689 6-6 6c-2.219 0-4.158-1.207-5.196-3h-3.804l-1.506-1.503-1.494 1.503-1.48-1.503-1.52 1.503-3-3.032 2.53-2.968h10.274zm7.696 1.5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5z"
-                      />
-                    </svg>
-                    <input
-                      type="password"
-                      placeholder="Password (min. 6 characters)"
-                      name="psw"
-                      required
-                    />
-                  </div>
-
-                  <div class="border">
-                    <svg
-                      width="24"
-                      height="24"
-                      class="modal-ico"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill-rule="none"
-                      clip-rule="evenodd"
-                    >
-                      <style type="text/css">
-                        .modal-ico {
-                          stroke: url(#sigMyGrad);
-                        }
-                      </style>
-                      <defs>
-                        <linearGradient id="sigMyGrad">
-                          <stop offset="5%" stop-color="#b671cf" />
-                          <stop offset="95%" stop-color="#3a30aa" />
-                        </linearGradient>
-                      </defs>
-                      <path
-                        d="M18 24h-12c-1.104 0-2-.896-2-2v-20c0-1.104.896-2 2-2h12c1.104 0 2 .896 2 2v20c0 1.104-.896 2-2 2zm1-5.083h-14v3.083c0 .552.449 1 1 1h12c.552 0 1-.448 1-1v-3.083zm-7 3c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm7-17h-14v13h14v-13zm-1-3.917h-12c-.551 0-1 .449-1 1v1.917h14v-1.917c0-.551-.448-1-1-1zm-4.5 1.917h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h3c.276 0 .5.224.5.5s-.224.5-.5.5z"
-                      /></svg
-                    ><input
-                      type="number"
-                      placeholder="Phone Number"
-                      name="phone"
-                      required
-                    />
-                  </div>
-
-                  <button type="submit" class="signupbtn btn-fill">
-                    Sign Up
-                  </button>
-                  <span class="orLogin"
-                    >Already have an Account?
-
-                    <strong onclick="orlog()">Login</strong></span
+                <div class="border">
+                  <svg
+                    class="modal-icon"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
                   >
+                    <style type="text/css">
+                      .modal-icon {
+                        stroke: url(#logMyGrad);
+                      }
+                    </style>
+                    <defs>
+                      <linearGradient id="logMyGrad">
+                        <stop offset="5%" stop-color="#b671cf" />
+                        <stop offset="95%" stop-color="#3a30aa" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M12.804 9c1.038-1.793 2.977-3 5.196-3 3.311 0 6 2.689 6 6s-2.689 6-6 6c-2.219 0-4.158-1.207-5.196-3h-3.804l-1.506-1.503-1.494 1.503-1.48-1.503-1.52 1.503-3-3.032 2.53-2.968h10.274zm7.696 1.5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5z"
+                    />
+                  </svg>
+                  <input
+                    type="password"
+                    placeholder="Password (min. 6 characters)"
+                    name="psw"
+                    required
+                  />
                 </div>
-              </form>
-            </div>
-          </div>
+                <div class="checkandforgot">
+                  <div class="check disFlex">
+                    <label class="checkbox">
+                      <input type="checkbox" /><span class="checkmark"></span>
+                    </label>
+                    <span>Keep me Logged In</span>
+                  </div>
+                  <a href="">forgot Password?</a>
+                </div>
 
-          <!-- *********************** -->
-          <div class="dropdown">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="menu dropbtn"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <style type="text/css">
-                .menu {
-                  stroke: url(#MyGradient);
-                }
-              </style>
-              <defs>
-                <linearGradient id="MyGradient">
-                  <stop offset="5%" stop-color="#b671cf" />
-                  <stop offset="95%" stop-color="#3a30aa" />
-                </linearGradient>
-              </defs>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-            <div class="dropdown-content">
-              <a href="">explore programs</a>
-              <a href="">offers</a>
-              <a href="">refund advantage</a>
-              <a href="">about us</a>
-            </div>
+                <button type="submit" class="signupbtn btn-fill">
+                  Sign Up
+                </button>
+                <span class="orLogin"
+                  >New User?
+                  <strong onclick="orsign()">Register here</strong></span
+                >
+              </div>
+            </form>
           </div>
         </div>
-      </header>
-      <button class="customPack">Customized Pack</button><button class="allPack">All Access Pack</button>       
-       <h1 class="card-light">CHOOSE ANY 4 COURSES @ <span>( 4 X 699 )</span>	<strong>&#8377;1499</strong> ONLY</h1>
 
-      <main>
+        <button class="btn-fill sign-up" id="signBtn">sign up</button>
+
+        <!-- /****************signup modal**************************/ -->
+        <div id="sign" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close" id="sign-close">&times;</span>
+            <form action="">
+              <div class="container">
+                <img class="logo" src="Tutedude.png" alt="logo" />
+                <a class="disFlex">
+                  <img
+                    class="google"
+                    src="5847f9cbcef1014c0b5e48c8.png"
+                    alt=""
+                  />
+                  Sign Up with Google
+                </a>
+                <h3>OR</h3>
+                <div class="border">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="modal-ico"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <style type="text/css">
+                      .modal-ico {
+                        stroke: url(#sigMyGra);
+                      }
+                    </style>
+                    <defs>
+                      <linearGradient id="sigMyGra">
+                        <stop offset="5%" stop-color="#b671cf" />
+                        <stop offset="95%" stop-color="#3a30aa" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"
+                    />
+                  </svg>
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="border">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    class="modal-ico"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <style type="text/css">
+                      .modal-ico {
+                        stroke: url(#sigMyGrad);
+                      }
+                    </style>
+                    <defs>
+                      <linearGradient id="sigMyGrad">
+                        <stop offset="5%" stop-color="#b671cf" />
+                        <stop offset="95%" stop-color="#3a30aa" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"
+                    />
+                  </svg>
+                  <input
+                    type="text"
+                    placeholder="Enter Email"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div class="border">
+                  <svg
+                    class="modal-ico"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                  >
+                    <style type="text/css">
+                      .modal-ico {
+                        stroke: url(#sigMyGrad);
+                      }
+                    </style>
+                    <defs>
+                      <linearGradient id="sigMyGrad">
+                        <stop offset="5%" stop-color="#b671cf" />
+                        <stop offset="95%" stop-color="#3a30aa" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M12.804 9c1.038-1.793 2.977-3 5.196-3 3.311 0 6 2.689 6 6s-2.689 6-6 6c-2.219 0-4.158-1.207-5.196-3h-3.804l-1.506-1.503-1.494 1.503-1.48-1.503-1.52 1.503-3-3.032 2.53-2.968h10.274zm7.696 1.5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5z"
+                    />
+                  </svg>
+                  <input
+                    type="password"
+                    placeholder="Password (min. 6 characters)"
+                    name="psw"
+                    required
+                  />
+                </div>
+
+                <div class="border">
+                  <svg
+                    width="24"
+                    height="24"
+                    class="modal-ico"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill-rule="none"
+                    clip-rule="evenodd"
+                  >
+                    <style type="text/css">
+                      .modal-ico {
+                        stroke: url(#sigMyGrad);
+                      }
+                    </style>
+                    <defs>
+                      <linearGradient id="sigMyGrad">
+                        <stop offset="5%" stop-color="#b671cf" />
+                        <stop offset="95%" stop-color="#3a30aa" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M18 24h-12c-1.104 0-2-.896-2-2v-20c0-1.104.896-2 2-2h12c1.104 0 2 .896 2 2v20c0 1.104-.896 2-2 2zm1-5.083h-14v3.083c0 .552.449 1 1 1h12c.552 0 1-.448 1-1v-3.083zm-7 3c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm7-17h-14v13h14v-13zm-1-3.917h-12c-.551 0-1 .449-1 1v1.917h14v-1.917c0-.551-.448-1-1-1zm-4.5 1.917h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h3c.276 0 .5.224.5.5s-.224.5-.5.5z"
+                    /></svg
+                  ><input
+                    type="number"
+                    placeholder="Phone Number"
+                    name="phone"
+                    required
+                  />
+                </div>
+
+                <button type="submit" class="signupbtn btn-fill">
+                  Sign Up
+                </button>
+                <span class="orLogin"
+                  >Already have an Account?
+
+                  <strong onclick="orlog()">Login</strong></span
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- *********************** -->
+        <div class="dropdown">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="menu dropbtn"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <style type="text/css">
+              .menu {
+                stroke: url(#MyGradient);
+              }
+            </style>
+            <defs>
+              <linearGradient id="MyGradient">
+                <stop offset="5%" stop-color="#b671cf" />
+                <stop offset="95%" stop-color="#3a30aa" />
+              </linearGradient>
+            </defs>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <div class="dropdown-content">
+            <a href="">explore programs</a>
+            <a href="">offers</a>
+            <a href="">refund advantage</a>
+            <a href="">about us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <button class="customPack">Customized Pack</button
+    ><button class="allPack">All Access Pack</button>
+    <h1 class="card-light">
+      CHOOSE ANY 4 COURSES @ <span>( 4 X 699 )</span>
+      <strong>&#8377;1499</strong> ONLY
+    </h1>
+
+    <main>
+      <div class="disFlex">
+        <div>
+          <p>
+            Now you can choose <strong>4 more COURSES</strong> of
+            <strong>YOUR CHOICE</strong> and make it a
+            <strong>SINGLE PACK of CUSTOMIZED COURSES</strong>
+          </p>
+          <p>
+            Add extra courses after 4 <strong>@ FLAT &#8377; 325</strong> off
+            per course
+          </p>
+        </div>
+        <img src="illustration.png" alt="illustration" />
+      </div>
+    </main>
+
+    <section class="">
+      <h2 class="gradText">Choose your best courses</h2>
+      <div class="course-grid">
+        <div class="course disFlex">
+          Web Development <button class="view">view</button
+          ><button class="add-course">add course</button>
+        </div>
+        <div class="course disFlex">
+          Web Development <button class="view">view</button
+          ><button class="add-course">add course</button>
+        </div>
+        <div class="course disFlex">
+          Web Development <button class="view">view</button
+          ><button class="add-course">add course</button>
+        </div>
+        <div class="course disFlex">
+          Web Development <button class="view">view</button
+          ><button class="add-course">add course</button>
+        </div>
+        <div class="course disFlex">
+          Web Development <button class="view">view</button
+          ><button class="add-course">add course</button>
+        </div>
+        <div class="course disFlex">
+          Web Development <button class="view">view</button
+          ><button class="add-course">add course</button>
+        </div>
+        <div class="course disFlex">
+          Web Development <button class="view">view</button
+          ><button class="add-course">add course</button>
+        </div>
+        <div class="course disFlex">
+          Web Development <button class="view">view</button
+          ><button class="add-course">add course</button>
+        </div>
+        <div class="course disFlex">
+          Web Development <button class="view">view</button
+          ><button class="add-course">add course</button>
+        </div>
+        <div class="course disFlex">
+          Web Development <button class="view">view</button
+          ><button class="add-course">add course</button>
+        </div>
+      </div>
+      <button class="proceed">
+        Proceed<svg
+          width="28"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          fill="currentcolor"
+        >
+          <path
+            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+          />
+        </svg>
+      </button>
+    </section>
+
+    <section class="four-plus">
+      <h1>Want to make it <strong>4+</strong>courses?</h1>
+      <p>Make your pack Smarter, now you caan ADD more of your</p>
+      <p>fovourite courses at a flat discount of <strong>325/course</strong></p>
+      <button>Add more Courses</button>
+    </section>
+
+    <section class="refund-sec">
+      <div class="refund-sec-head">
+        <p>Welcome to the only program with</p>
+        <span>FULL REFUND</span>
+        <p>on course completion</p>
+      </div>
+      <h2>How it works?</h2>
+      <h3>Tenure of REFUND REWARD</h3>
+      <div class="disFlex refund-tenure">
+        <img src="Screenshot 2022-01-04 234728.jpg" alt="" class="refund-img" />
+        <p>
+          Become Elligible for a 100% REFUND on the purchasse of the courses of
+          YOUR CHOICE, By COMPELETING the course in the time span of ON or
+          BEFORE 1 COMPLETE YEAR from the Date of purchase.
+        </p>
+      </div>
+      <div class="fade-border">
+        <h3>When ONE Course is Bought</h3>
+        <div class="disFlex">
+          <div class="colFlex">
+            <div class="rupee">&#8377;</div>
+            Your Course Expenditure
+          </div>
+          <img src="arrow.jpg" alt="" class="arrow arrow-1" />
+          <div class="colFlex">
+            <div class="rupee course-ico">
+              <div>
+                <img src="course.jpg" alt="" class="read-ico" />
+              </div>
+            </div>
+            Any Single Course You Buy
+          </div>
+          <img src="arrow.jpg" alt="" class="arrow arrow-2" />
+
+          <div class="colFlex">
+            <div class="rupee tick">&#10003;</div>
+            When Course is Completed within 1 year of DATE OF PURCHASE
+          </div>
+        </div>
+        <div class="full-refund disFlex">
+          <div>
+            <h2>FULL REFUND REWARD</h2>
+            <p>(no questions asked)</p>
+          </div>
+          <img src="arr.jpg" alt="" class="arrow-3" />
+        </div>
+      </div>
+
+      <div class="fade-border">
+        <h3>When a COURSE PACK is Bought (4 or MORE COURSES)</h3>
         <div class="disFlex">
           <div>
-            <p>Now you can choose <strong>4 more COURSES</strong> of <strong>YOUR CHOICE</strong> and make it a <strong>SINGLE PACK of CUSTOMIZED COURSES</strong></p>
-            <p>Add extra courses after 4 <strong>@ FLAT &#8377; 325</strong> off per course</p>
-            
+            <div class="hex-container">
+              <div class="hex1"><span class="hex">&#x2B22;</span></div>
+              <div class="hex2"><span class="hex">&#x2B22;</span></div>
+              <div class="hex3"><span class="hex">&#x2B22;</span></div>
+              <div class="hex4"><span class="hex">&#x2B22;</span></div>
+            </div>
+            <img src="arrow.jpg" alt="" class="arrow arrow-5" />
+            <div class="colFlex">
+              <div class="rupee">&#8377;</div>
+              Your COURSE PACK Expenditure
+            </div>
           </div>
-          <img src="illustration.png" alt="illustration" />
+          <img src="arrow.jpg" alt="" class="arrow arrow-6" />
+
+          <div>
+            <div class="circle-container">
+              <p>(REFUND REWARD CYCLE UNLOCKING)</p>
+              <div class="circle1">
+                <div class="circle">
+                  <div class="inner-circle">
+                    <h1>1<sup>st</sup></h1>
+                    REFUND INITIATED
+                  </div>
+                </div>
+              </div>
+              <div class="circle2">
+                <div class="circle">
+                  <div class="inner-circle">
+                    <h1>2<sup>nd</sup></h1>
+                    REFUND INITIATED
+                  </div>
+                </div>
+              </div>
+              <div class="circle3">
+                <div class="circle">
+                  <div class="inner-circle">
+                    <h1>3<sup>rd</sup></h1>
+                    REFUND INITIATED
+                  </div>
+                </div>
+              </div>
+              <div class="circle4">
+                <div class="circle">
+                  <div class="inner-circle">
+                    <h1>4<sup>th</sup></h1>
+                    REFUND INITIATED
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="line"></div>
+              <p style="font-weight: 600">
+                <p style="font-weight: 600"> COMPLETE REFUND REWARD IS ACHIEVED ONCE</p>
+               <p style="font-weight: 600">ALL COURSE HAS BEEN COMPLETED WITHIN</p> 
+                <p style="font-weight: 600">1 YEAR FROM DATE OF PURCHASE</p>
+              </p>
+              <span>(as shown in the refund cycle)</span>
+            </div>
+          </div>
         </div>
-      
-      </main>
-
-      <section class="">
-        <h2 class="gradText">Choose your best courses</h2>
-        <div class="course-grid">
-          <div class="course disFlex">Web Development <button class="view">view</button><button class="add-course">add course</button></div>
-          <div class="course disFlex">Web Development <button class="view">view</button><button class="add-course">add course</button></div>
-          <div class="course disFlex">Web Development <button class="view">view</button><button class="add-course">add course</button></div>
-          <div class="course disFlex">Web Development <button class="view">view</button><button class="add-course">add course</button></div>
-          <div class="course disFlex">Web Development <button class="view">view</button><button class="add-course">add course</button></div>
-          <div class="course disFlex">Web Development <button class="view">view</button><button class="add-course">add course</button></div>
-          <div class="course disFlex">Web Development <button class="view">view</button><button class="add-course">add course</button></div>
-          <div class="course disFlex">Web Development <button class="view">view</button><button class="add-course">add course</button></div>
-          <div class="course disFlex">Web Development <button class="view">view</button><button class="add-course">add course</button></div>
-          <div class="course disFlex">Web Development <button class="view">view</button><button class="add-course">add course</button></div>
-
-        </div>
-        <button class="proceed">Proceed<svg width="28" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" fill="currentcolor"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg></button>
-  </section>
-
-<section class="four-plus">
-<h1>Want to make it <strong>4+</strong>courses?</h1>
-<p>Make your pack Smarter, now you caan ADD more of your</p>
-<p>fovourite courses at a flat discount of  <strong>325/course</strong></p>
-<button>Add more Courses</button>
-</section>
+      </div>
+      <p style="font-size: 1.2rem;">(in case of confusion or more details connect with us on our chat support)</p>
+    </section>
 
     <section class="query">
       <h2 class="gradText">Have Any Query</h2>
@@ -385,7 +552,17 @@
                 d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"
               />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" class="minus"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="white"
+              class="minus"
+            >
+              <path
+                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"
+              />
             </svg>
           </button>
           <div class="query-ans hidden">
@@ -410,7 +587,17 @@
                 d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"
               />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" class="minus"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="white"
+              class="minus"
+            >
+              <path
+                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"
+              />
             </svg>
           </button>
           <div class="query-ans hidden">
@@ -435,7 +622,17 @@
                 d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"
               />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" class="minus"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="white"
+              class="minus"
+            >
+              <path
+                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"
+              />
             </svg>
           </button>
           <div class="query-ans hidden">
@@ -460,7 +657,17 @@
                 d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"
               />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" class="minus"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="white"
+              class="minus"
+            >
+              <path
+                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-12v-2h12v2z"
+              />
             </svg>
           </button>
           <div class="query-ans hidden">
