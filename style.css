@@ -760,6 +760,7 @@ main .disFlex p:nth-child(2) {
 .hex4::after {
   color: #fff;
   font-size: 1.4rem;
+  width: 10rem;
   font-weight: 600;
   position: absolute;
   top: 50%;
