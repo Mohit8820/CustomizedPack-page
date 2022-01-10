@@ -427,7 +427,6 @@ main {
   margin-top: 0;
   padding-left: 0;
   padding-right: 0;
-  position: relative;
 }
 .card-light {
   margin: 4rem auto 1rem;
@@ -471,10 +470,10 @@ main .disFlex p:nth-child(2) {
   margin-top: 4rem;
 }
 .selected-courses {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
-  transform: translate(-30%, 60%);
+  transform: translate(60%, -60%);
   width: 20rem;
   height: 8rem;
   background: linear-gradient(
@@ -489,6 +488,7 @@ main .disFlex p:nth-child(2) {
   border-radius: 1.5rem;
   color: #800780;
   box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
+  z-index: 999;
 }
 
 .course-grid {
