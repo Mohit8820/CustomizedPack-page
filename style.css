@@ -19,6 +19,24 @@ html {
 .mview {
   display: none;
 }
+.name {
+  background: linear-gradient(to bottom, #b671cf, #3a30aa);
+  color: white;
+  font-weight: 500;
+  box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  display: none;
+}
+.dropdown-content.name-dropdown {
+  min-width: 100px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.dropdown-content.name-dropdown a {
+  text-align: center;
+}
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -92,41 +110,31 @@ html {
 .border {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 4.17rem;
+  justify-content: flex-start;
+  height: 4rem;
   margin: 1rem auto;
   border-radius: 0.87rem;
-  background-color: #fff;
+  /* background-color: #fff; */
   position: relative;
   z-index: 1;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.6, #b671cf),
-    color-stop(0.1, #3a30aa)
-  );
+  border: #8255c0 solid 0.1rem;
 }
 .border input::placeholder {
   font-size: 1.2rem;
   font-weight: 500;
 }
 .border input {
-  width: 87.5%;
-  height: 4rem;
+  width: 100%;
+  height: 100%;
   border: none;
   padding-left: 1rem;
   border-radius: 0 0.8rem 0.8rem 0;
 }
 .border svg {
-  width: 12%;
-  height: 2rem;
+  height: 2.5rem;
+
   background-color: #fff;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.5rem;
-  height: 4rem;
-  border-radius: 0.8rem 0 0 0.8rem;
+  margin: 0.5rem;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -498,7 +506,7 @@ main .disFlex p:nth-child(2) {
   column-gap: 4rem;
   width: 60%;
   margin: 2rem auto;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -507,7 +515,7 @@ main .disFlex p:nth-child(2) {
   height: 11rem;
   border-radius: 1rem;
   box-shadow: rgb(0, 0, 0, 25%) 0px 4px 5px;
-  justify-content: space-around;
+  padding: 0 2%;
 }
 .view {
   border: 0.2rem #fff solid;
@@ -516,6 +524,7 @@ main .disFlex p:nth-child(2) {
   width: 7rem;
   height: 5rem;
   background: none;
+  margin-right: 1rem;
 }
 .add-course {
   border-radius: 1.2rem;
@@ -996,7 +1005,6 @@ main .disFlex p:nth-child(2) {
 }
 .query-asked {
   width: 100%;
-  height: 5rem;
   margin: 1.5rem auto;
   background-color: #e0cbe0;
   font-size: 1.6rem;
@@ -1005,13 +1013,17 @@ main .disFlex p:nth-child(2) {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   box-shadow: rgb(0, 0, 0, 30%) 0px 3px 5px;
 }
 .query-asked p {
   color: #800080;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 87%;
   height: 5rem;
   padding: 1.25rem;
 }
@@ -1322,7 +1334,7 @@ footer a {
   header {
     /* align-items: flex-end;
     justify-content: space-between; */
-    padding: 3rem 1rem 1.1rem;
+    padding: 1.1rem 1rem 1.1rem;
     background-color: white;
     box-shadow: rgb(0, 0, 0, 30%) 0px 3px 5px;
   }
@@ -1368,7 +1380,13 @@ footer a {
     display: block;
   }
   .pack-buttons {
-    padding-top: 9rem;
+    padding-top: 7rem;
+  }
+  .customPack,
+  .allPack {
+    width: 18rem;
+    height: 3.5rem;
+    font-size: 1.6rem;
   }
   .card-light {
     font-size: 1.6rem;
@@ -1428,13 +1446,9 @@ footer a {
     color: white;
     margin-top: 0;
   }
-  .query h3 {
-    background-clip: unset;
-    background: none;
-    -webkit-text-fill-color: white;
-  }
+
   .query-asked {
-    width: 28rem;
+    width: 32rem;
     height: 4rem;
     margin: 1.5rem auto;
     font-size: 1.3rem;
